@@ -60,8 +60,7 @@ jobs:
 
       - name: Compile firmware
          run: |
-          rm -f ./.config*
-          touch ./.config
+          make -j$(nproc) || make -j1 V=s
           #
           # ========================固件定制部分========================
           # 
@@ -185,8 +184,10 @@ jobs:
           # 
           # ========================固件定制部分结束========================
           # 
-          sed -i 's/^[ \t]*//g' ./.config
-          make defconfig
+          df -h
+          du -h --max-depth=1 ./ --exclude=build_dir --exclude=bin
+          du -h --max-depth=1 ./build_dir
+          du -h --max-depth=1 ./bin
 
       - name: Prepare artifact
         run: |
