@@ -66,6 +66,11 @@ jobs:
           CONFIG_TARGET_ramips_mt7621=y
           CONFIG_TARGET_ramips_mt7621_DEVICE_hiwifi_hc5962=y
           EOF
+          # IPv6支持:
+          cat >> .config <<EOF
+          CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
+          CONFIG_PACKAGE_ipv6helper=y
+          EOF
           df -h
           echo "======================="
           du -h --max-depth=1 ./ --exclude=build_dir --exclude=bin
