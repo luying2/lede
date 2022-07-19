@@ -144,7 +144,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-openvpn-server=y
           # CONFIG_PACKAGE_luci-app-qbittorrent=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
@@ -164,7 +164,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go=y
           CONFIG_PACKAGE_luci-app-zerotier=y
-          CONFIG_PACKAGE_luci-app-S-S R-plus
+          # CONFIG_PACKAGE_luci-app-S-S R-plus
           EOF
           # LuCI主题:
           cat >> .config <<EOF
