@@ -129,39 +129,35 @@ jobs:
           # EOF
           # 常用LuCI插件选择:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-app-adbyby-plus=y
-          CONFIG_PACKAGE_luci-app-aria2=y
-          CONFIG_PACKAGE_luci-app-baidupcs-web=y
-          # CONFIG_PACKAGE_luci-app-docker=y
-          # CONFIG_PACKAGE_luci-app-frpc=y
-          # CONFIG_PACKAGE_luci-app-hd-idle=y
-          # CONFIG_PACKAGE_luci-app-kodexplorer=y
-          # CONFIG_PACKAGE_luci-app-minidlna=y
-          # CONFIG_PACKAGE_luci-app-openvpn=y
-          # CONFIG_PACKAGE_luci-app-openvpn-server=y
-          # CONFIG_PACKAGE_luci-app-qbittorrent=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-          # CONFIG_PACKAGE_luci-app-ttyd=y
-          # CONFIG_PACKAGE_luci-app-v2ray-server=y
-          # CONFIG_PACKAGE_luci-app-verysync=y
-          # CONFIG_PACKAGE_luci-app-webadmin=y
-          # CONFIG_PACKAGE_luci-app-wireguard=y
-          CONFIG_PACKAGE_luci-app-easymesh=y
-          CONFIG_PACKAGE_luci-app-wrtbwmon=y
-          CONFIG_PACKAGE_luci-app-pppoe-relay=y
-          CONFIG_PACKAGE_luci-app-vlmcsd=y
-          CONFIG_PACKAGE_luci-app-pushbot=y
-          CONFIG_PACKAGE_luci-app-wrtbwmon=y
-          CONFIG_PACKAGE_luci-app-easymesh=y
-          CONFIG_PACKAGE_luci-app-jd-dailybonus=y
-          # CONFIG_PACKAGE_luci-app-unblockmusic=y
-          # CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go=y
-          # CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_NodeJS=y
           CONFIG_PACKAGE_luci-app-zerotier=y
+          CONFIG_PACKAGE_luci-app-ddns=y
+          CONFIG_PACKAGE_luci-app-wol=y
+          CONFIG_PACKAGE_luci-app-upnp=y
+          CONFIG_PACKAGE_luci-app-accesscontrol=y
+          CONFIG_PACKAGE_luci-app-arpbind=y
+          CONFIG_PACKAGE_luci-app-autoreboot=y
+          CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs=y
+          CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk=y
+          CONFIG_PACKAGE_luci-app-filetransfer=y
+          CONFIG_PACKAGE_luci-app-firewall=y
+          CONFIG_PACKAGE_luci-app-nlbwmon=y
+          CONFIG_PACKAGE_luci-app-ramfree=y
+          CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui=y
+          CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng=y
+          CONFIG_PACKAGE_luci-app-ttyd=y
+          CONFIG_PACKAGE_luci-app-turboacc=y
+          CONFIG_PACKAGE_luci-app-vlmcsd=y
+          CONFIG_PACKAGE_luci-theme-bootstrap=y
+          CONFIG_PACKAGE_luci-app-ssr-plus=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
+          CONFIG_PACKAGE_openssh-sftp-server=y
+          CONFIG_PACKAGE_luci-app-samba=y
+          CONFIG_PACKAGE_luci-app-adblock=y
+          CONFIG_PACKAGE_luci-app-easymesh=y
+          CONFIG_PACKAGE_luci-app-pushbot=y
+          CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_DNSFORWARDER=y
+          CONFIG_PACKAGE_luci-app-watchcat=y
+          CONFIG_PACKAGE_luci-app-wrtbwmon=y
           EOF
           # LuCI主题:
           cat >> .config <<EOF
